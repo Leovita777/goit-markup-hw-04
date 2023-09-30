@@ -62,7 +62,6 @@ header {
 .head-nav {
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -84,7 +83,6 @@ header {
 .head-nav-menu {
   display: flex;
   gap: 40px;
-  margin-right: auto;
 }
 
 .nav-menu-item {
@@ -141,6 +139,10 @@ header {
   padding-top: 188px;
   padding-bottom: 188px;
   background: #2e2f42;
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .quote-title {
@@ -268,6 +270,29 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.team-menu-social {
+  display: flex;
+  gap: 24px;
+}
+
+team-item-social {
+  width: 40px;
+  height: 40px;
+}
+
+team-link-social {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+team-link-icons {
+  fill: rgba(244, 244, 253, 1);
 }
 
 /* +++++ Container4 +++++ */
