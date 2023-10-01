@@ -78,6 +78,13 @@ header {
 
 .head-nav-link-foot {
   color: #2e2f42;
+  transition: color 500ms ease-out;
+}
+
+head-nav-link-foot:hover,
+head-nav-link-foot:focus,
+head-nav-link-foot:active {
+  color: #404BBF;
 }
 
 .head-nav-menu {
@@ -171,6 +178,7 @@ header {
   height: 56px;
   border-radius: 4px;
   border: none;
+  
 }
 
 .quote-btn:hover,
