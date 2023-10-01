@@ -51,9 +51,6 @@ header {
   border-bottom: 1px solid #E7E9FC
 }
 
-.head:hover {
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -74,18 +71,6 @@ header {
   color: #4d5ae5;
   text-transform: uppercase;
   margin-right: 76px;
-}
-
-.current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  width: 100%;
-  background: #404BBF;
-  border-radius: 2px;
 }
 
 .head-nav-link-foot {
@@ -115,11 +100,28 @@ header {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  position: relative;
 }
 
 .nav-menu-link:hover,
 .nav-menu-link:focus {
   color: #404bbf;
+}
+
+.current {
+  color: #404BBF;
+}
+
+.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 100%;
+  background: #404BBF;
+  border-radius: 2px;
 }
 
 .adrs {
@@ -162,6 +164,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .quote-title {
@@ -226,17 +230,17 @@ header {
   border: 1px;
 }
 
-.desc-link-social {
-  width: 100%;
-  height: 100%;
+.desc-icons-wrap {
+  width: 264px;
+  height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #F4F4FD;
-  padding: 24px;
+  margin-bottom: 8px;
 }
 
-.desc-link-icons {
+.desc-icons {
   fill: ;
 }
 
@@ -310,6 +314,7 @@ header {
 
 .team-menu-social {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -334,7 +339,6 @@ header {
 }
 
 .team-link-icons {
-  /* fill: ; */
 }
 
 /* +++++ Container4 +++++ */
@@ -364,7 +368,7 @@ header {
   width: calc((100% - 24px * 2) / 3);
 }
 
-.portfolio-list-item:hover .portfolio-cover-wrap{
+.portfolio-list-item:hover .portfolio-cover-wrap {
   transform: translateY(0);
 }
 
@@ -396,7 +400,6 @@ header {
   color: #FFFFFF;
 }
 
-
 .portfolio-list-box {
   padding: 32px 16px;
   border: 1px solid #E7E9FC;
@@ -427,8 +430,10 @@ header {
 
 .foot-container {
   display: flex;
-  /* flex-grow: 1; */
-  /* gap: 120px; */
+}
+
+.foot-wrap {
+  margin-right: 120px;
 }
 
 .foot-link {
@@ -456,8 +461,6 @@ header {
 }
 
 .foot-menu-box {
-  /* padding: 32px 0; */
-  /* margin-left: 120px; */
 }
 
 .foot-menu-name {
@@ -466,7 +469,6 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #FFFFFF;
-  /* text-transform: capitalize; */
   margin-bottom: 16px;
 }
 
@@ -496,5 +498,4 @@ header {
 }
 
 .foot-link-icons {
-  /* fill: ; */
 }
