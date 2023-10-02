@@ -381,7 +381,7 @@ header {
   transform: translateY(0%); 
 }
 
-.portfolio-list-item:hover .portfolio-cover-wrap {
+.portfolio-list-item:hover .portfolio-cover-text {
   transform: translateY(0);
 }
 
