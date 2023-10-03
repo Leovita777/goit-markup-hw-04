@@ -235,8 +235,8 @@ header {
 }
 
 .desc-icons-wrap {
-  width: 264px;
   height: 112px;
+  border: solid 1px #8E8F99;
   border-radius: 4px;
   display: flex;
   align-items: center;
