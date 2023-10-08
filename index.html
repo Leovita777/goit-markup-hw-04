@@ -521,16 +521,16 @@
 
     <footer class="foot">
       <div class="foot-container container">
-      <div class="foot-wrap">
-        <a class="foot-link" href="./index.html">
-          Web
-          <span class="foot-link-foot">Studio</span></a
-        >
-        <p class="foot-quote">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
-      </div>
+        <div class="foot-wrap">
+          <a class="foot-link" href="./index.html">
+            Web
+            <span class="foot-link-foot">Studio</span></a
+          >
+          <p class="foot-quote">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
         <div class="foot-menu-box">
           <p class="foot-menu-name">Social media</p>
           <ul class="foot-menu-social">
@@ -588,13 +588,37 @@
             </li>                                  
           </ul>
         </div>
+
+        <!-- FOOT FORM -->
+        <form class="foot-form">
+          <div class="foot-fild">
+            <label for="foot-user-email" class="foot-label">Subscribe</label>
+            <div class="foot-input-wrap">
+              <input type="email"
+                name="foot-user-email"
+                class="foot-input"
+                required
+                id="foot-user-email"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <button type="submit" class="foot-form-btn">Subscribe
+            <svg class="foot-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>  
     </footer>
+
+    <!-- MODAL FORM-->
+
     <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
-          <svg class="modal-btn-icon" width="24" height="24">
-            <use href=".images/icons.svg#icon-x-close"></use>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
@@ -649,7 +673,18 @@
               class="modal-textarea"
               placeholder="Text input"
             ></textarea>
-            </div>
+          </div>
+          <div class="modal-fild">
+            <input class="modal-check visually-hidden" type="checkbox" name="accept" id="accept" required>
+            <label class="modal-check-text" for="accept">
+              <span class="modal-check-box">
+                <svg class="modal-check-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-check-link" href="">Privacy Policy</a>
+            </label>
           </div>
           <button type="submit" class="modal-form-btn">Send</button>
         </form>
