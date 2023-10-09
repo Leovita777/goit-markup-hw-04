@@ -515,12 +515,16 @@ header {
 
 /*======= FOOT FORM =======*/
 
+.foot-form-wrap {
+  margin-left: 80px;
+}
+
 .foot-form {
   display: flex;
   gap: 24px;
 }
 
-.foot-label {
+.foot-form-text {
   display: block;
   color: #FFF;
   font-family: Roboto;
@@ -529,7 +533,6 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02px;
   margin-bottom: 16px;
-  margin-left: 80px;
 }
 
 .foot-input {
@@ -541,7 +544,6 @@ header {
   outline: transparent;
   background-color: transparent;
   padding: 8px 212px 8px 16px;
-  margin-left: 80px;
 }
 
 .foot-input::placeholder {
@@ -572,6 +574,7 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  /* margin-left: 24px; */
 }
 
 /*======= MODAL FORM =======*/
@@ -603,7 +606,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px 24px;
 }
 
 .modal-btn {
@@ -633,11 +636,19 @@ header {
   letter-spacing: 0.02em;
   color: #2E2F42;
   text-align: center;
-  margin: 24px 24px 16px 24px;
+  margin: 0 0 16px 0;
 }
 
 .modal-fild {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
+}
+
+.modal-fild-text {
+  margin-bottom: 16px;
+}
+
+.modal-fild-check {
+  margin-bottom: 24px;
 }
 
 .modal-label {
@@ -707,9 +718,9 @@ fill: #4D5AE5;
 }
 
 .modal-check:checked + .modal-check-text > .modal-check-box {
-  background: rgba(46, 47, 66, 0.4);
-  border: none;
-  /* fill: #FFF; */
+  background: rgba(64, 75, 191, 1);
+  border: 1px solid rgba(64, 75, 191, 1);
+  fill: #F4F4FD;
 }
 
 .modal-check-text {
@@ -750,26 +761,20 @@ fill: #4D5AE5;
 }
 
 .modal-form-btn {
-  padding: 24px 119px;
+  display: block;
+  margin: 0 auto;
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #FFF;
   text-align: center;
-  display: inline-flex;
   width: 169px;
   height: 56px;
-  align-items: flex-start;
-  gap: 10px;
   border: none;
   border-radius: 4px;
   background: #4D5AE5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 

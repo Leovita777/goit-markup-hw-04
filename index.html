@@ -590,25 +590,28 @@
         </div>
 
         <!-- FOOT FORM -->
-        <form class="foot-form">
-          <div class="foot-fild">
-            <label for="foot-user-email" class="foot-label">Subscribe</label>
-            <div class="foot-input-wrap">
-              <input type="email"
-                name="foot-user-email"
-                class="foot-input"
-                required
-                id="foot-user-email"
-                placeholder="Email"
-              />
+        <div class="foot-form-wrap">
+          <form class="foot-form">
+            <div class="foot-fild">
+              <p class="foot-form-text">Subscribe</p>
+              <div class="foot-input-wrap">
+                <label for="foot-user-email" class="foot-label"></label>
+                <input type="email"
+                  name="foot-user-email"
+                  class="foot-input"
+                  required
+                  id="foot-user-email"
+                  placeholder="Email"
+                />
+                <button type="submit" class="foot-form-btn">Subscribe
+                  <svg class="foot-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <button type="submit" class="foot-form-btn">Subscribe
-            <svg class="foot-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+          </form>
+        </div>
       </div>  
     </footer>
 
@@ -660,12 +663,12 @@
                 required
                 id="user-email"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-fild">
+          <div class="modal-fild-text">
             <label for="user-text" class="modal-label">Comment</label>
             <textarea
               name="user-text"
@@ -674,11 +677,11 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-fild">
+          <div class="modal-fild-check">
             <input class="modal-check visually-hidden" type="checkbox" name="accept" id="accept" required>
             <label class="modal-check-text" for="accept">
               <span class="modal-check-box">
-                <svg class="modal-check-icon" width="16" height="16">
+                <svg class="modal-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
